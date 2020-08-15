@@ -124,6 +124,7 @@ def publishdetails():
                     publish("title",newtitle,newdetail)
     if mqttprogress:
         publishprogress()
+    publish( "kodi_profile":xbmc.Profiles.GetCurrentProfile() )
 
 #
 # Notification subclasses
